@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Описание проекта">
+  <title>Чужие судьи</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <picture>
+              <!-- <source srcset="./img/logo.webp, ./img/logo@2x.webp 2x"> -->
+              <img src="./img/logo.jpg" alt="logo" width="150" />
+              <!-- </picture> -->
+          </div>
+          <p class="header__center-text">
+            ОШИБОЧНЫЕ <br>
+            (НЕПРАВИЛЬНЫЕ) <br>
+            СУДЬИ
+          </p>
+          <p class="header__right-text">
+            Проект <br><b>«КАПЕЛЬКА»</b><br>
+            Сергей Марюшин <br>
+            Россия - Крым Бахчисарай <br>
+            с. Верхоречье
+          </p>
+        </div>
+        <div class="header__nav-wrapper">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">
+                О сайте
+              </a>
+            </li>
+            <li class="header__nav-item" title="Добавить свой ошибочный судебный акт">
+              <a href="#" class="header__nav-link">
+                Добавить свой ошибочный судебный акт
+              </a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">
+                Контакты
+              </a></li>
+            <li class="header__nav-item" title="Реквизиты для поддержки проекта"><a href="#" class="header__nav-link">
+                Поддержать проект
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="container">
+          <div class="main__nav-wrapper">
+            <ul class="main__nav-list">
+              <li class="main__nav-item">Ошибочные судьи</li>
+              <li class="main__nav-item">Неправильные чиновники</li>
+              <li class="main__nav-item">Отнятая выгода</li>
+              <li class="main__nav-item">Неэффективная медицина</li>
+              <li class="main__nav-item">Ампутированный дом</li>
+            </ul>
+            <div class="main__content-wrapper">
+              
+            </div>
+          </div>
+          <div class="main__content">
+            <div class="main__content-wrapper">
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container"></div>
+    </footer>
+  </div>
+
+  <!-- Модалки -->
+  <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Обычная модалка</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть окно" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
