@@ -877,6 +877,12 @@ button,
   border: 1px solid #047466;
   border-radius: 6px;
   padding: 20px;
+  max-width: 1156px;
+  word-wrap: break-word;
+}
+
+.main__content-wrapper a {
+  color: #2c39f2;
 }
 
 .main__nav-list {
