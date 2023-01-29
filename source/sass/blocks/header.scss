@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px;
 }
 
 .header__logo {}
@@ -17,9 +18,11 @@
 
 .header__nav-wrapper {
   margin-top: 15px;
-  min-height: 80px;
+  margin-bottom: 15px;
   border-top: 1px solid $color-tropical-rain-forest;
   border-bottom: 1px solid $color-tropical-rain-forest;
+  // background-color: ;
+  
 }
 
 .header__nav-list {
@@ -36,12 +39,14 @@
 
 .header__nav-item {
   margin-right: 40px;
-  max-width: 300px;
+  max-width: 250px;
   text-align: center;
+
 }
 
 .header__nav-link {
   padding: 5px;
+
   @include hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {

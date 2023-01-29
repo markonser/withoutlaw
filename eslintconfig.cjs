@@ -129,7 +129,7 @@ module.exports = {
     'no-multiple-empty-lines': ['error', {max: 2}],
     'no-new-object': 'error',
     'no-trailing-spaces': 'error',
-    'object-curly-spacing': 'error',
+    'object-curly-spacing': ['error', 'always'],
     'one-var': [
       'error',
       {

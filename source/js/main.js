@@ -1,5 +1,6 @@
-import {iosVhFix} from './utils/ios-vh-fix.js';
-import {initModals} from './modules/modals/init-modals.js';
+import { iosVhFix } from './utils/ios-vh-fix.js';
+import { initModals } from './modules/modals/init-modals.js';
+import { loadLeftNavMenu } from './modules/left-nav/load-left-nav-menu.js';
 
 // ---------------------------------
 
@@ -12,6 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
+  loadLeftNavMenu();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

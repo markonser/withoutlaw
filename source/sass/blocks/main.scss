@@ -1,15 +1,38 @@
-.main__nav-wrapper {
+.main__wrapper {
   display: grid;
+  column-gap: 20px;
   min-height: 50vh;
   grid-template-columns: min-content 1fr;
+}
+
+.main__content-wrapper {
+  border: 1px solid $color-tropical-rain-forest;
+  border-radius: 6px;
+  padding: 20px;
+  max-width: 1156px;
+  word-wrap: break-word;
+}
+
+.main__content-wrapper a {
+color: $color-neon-blue;
+}
+
+.main__nav-wrapper {
+
 }
 
 .main__nav-list {
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 0;
+  padding: 0px;
   list-style-type: none;
   font-size: 18px;
+  border-radius: 6px;
+  overflow: hidden;
+}
 
+.main__nav-link {
+  color: $color-default-white;
+  // padding: 10px;
 }
