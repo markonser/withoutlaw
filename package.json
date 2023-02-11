@@ -61,5 +61,8 @@
   },
   "engines": {
     "node": ">=16.15.1"
+  },
+  "dependencies": {
+    "jodit": "^3.24.2"
   }
 }

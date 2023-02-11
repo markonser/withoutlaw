@@ -2,8 +2,9 @@
   display: inline-flex;
   padding: 10px 20px;
   color: $color-default-white;
-  background-color: $color-neon-blue;
+  background-color: $color-tropical-rain-forest;
   border: none;
+  border-radius: 0.25rem;
   cursor: pointer;
   transition: opacity $trans-default;
 
@@ -22,28 +23,94 @@
   }
 }
 
+// .btn-nav {
+//   display: inline-flex;
+//   padding: 10px 20px;
+//   cursor: pointer;
+//   transition: opacity $trans-default;
+//   background-color: $color-elm;
+//   color: $color-default-white;
+//   // border-top: 1px solid $color-default-white;
+//   // border-bottom: 1px solid $color-palm-leaf;
+//   box-shadow: inset 0 0 3px 3px $color-tropical-rain-forest;
+//   // border-radius: 10px;
+
+//   &:disabled {
+//     opacity: 0.5;
+
+//     pointer-events: none;
+//   }
+
+//   @include hover-focus {
+//     background-color: $color-tropical-rain-forest;
+//     // color: $color-default-black;
+//     // border-top-right-radius: 10px;
+//     // border-bottom-right-radius: 10px;
+//   }
+// }
 .btn-nav {
-  display: inline-flex;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: opacity $trans-default;
-  background-color: $color-elm;
-  color: $color-default-white;
-  // border-top: 1px solid $color-default-white;
-  // border-bottom: 1px solid $color-palm-leaf;
-  box-shadow: inset 0 0 3px 3px $color-tropical-rain-forest;
-  // border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 30px;
+  margin: 5px 0px;
+  position: relative;
+  color: $color-default-black;
+  border: 1px solid rgba(255, 255, 255, .4);
+  background: none;
+  font-weight: 300;
+  min-width: 200px;
+}
 
-  &:disabled {
-    opacity: 0.5;
+.nav-left {
+  padding: 5px 10px;
+}
 
-    pointer-events: none;
-  }
+.btn-nav:before,
+.btn-nav:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  box-sizing: border-box;
+}
 
-  @include hover-focus {
-    background-color: $color-tropical-rain-forest;
-    // color: $color-default-black;
-    // border-top-right-radius: 10px;
-    // border-bottom-right-radius: 10px;
-  }
+.btn-nav:before {
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid $color-tropical-rain-forest;
+  border-top: 1px solid $color-tropical-rain-forest;
+  transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+
+.btn-nav:after {
+  top: 0;
+  right: 0;
+  border-right: 1px solid $color-tropical-rain-forest;
+  border-bottom: 1px solid $color-tropical-rain-forest;
+  transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+}
+
+.btn-nav:hover:before,
+.btn-nav:hover:after {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+
+.btn-nav:hover:before {
+  transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+}
+
+.btn-nav:hover:after {
+  transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+}
+
+.btn-nav:hover {
+  background: $color-btn-nav-hover;
+}
+
+.btn-nav.btn-is-active {
+  border: 1px solid $color-tropical-rain-forest;
+  background: $color-btn-nav-hover;
 }

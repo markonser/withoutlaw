@@ -5,7 +5,9 @@
   padding: 15px;
 }
 
-.header__logo {}
+.header__logo {
+  padding-left: 20px;
+}
 
 .header__center-text {
   font-family: $bold;
@@ -17,35 +19,25 @@
 }
 
 .header__nav-wrapper {
-  margin-top: 15px;
-  margin-bottom: 15px;
   border-top: 1px solid $color-tropical-rain-forest;
   border-bottom: 1px solid $color-tropical-rain-forest;
-  // background-color: ;
-  
 }
 
 .header__nav-list {
   display: flex;
   justify-content: center;
-  margin: 0;
-  padding: 0;
   list-style-type: none;
   font-size: 18px;
   flex-wrap: wrap;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin:0;
+  align-items: center;
+  text-align: center;
 }
 
 .header__nav-item {
-  margin-right: 40px;
   max-width: 250px;
-  text-align: center;
-
-}
-
-.header__nav-link {
-  padding: 5px;
+  cursor: pointer;
+  padding: 20px 20px;
 
   @include hover-focus {
     @media (hover: hover) {

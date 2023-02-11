@@ -1,116 +1,282 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang='ru'>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="ОШИБОЧНЫЕ (НЕПРАВИЛЬНЫЕ) СУДЬИ">
+  <meta charset='UTF-8' />
+  <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <meta name='description' content='ОШИБОЧНЫЕ (НЕПРАВИЛЬНЫЕ) СУДЬИ'>
   <title>Чужие судьи</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel='stylesheet' href='css/style.min.css'>
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class='wrapper'>
     <header>
-      <div class="container">
-        <div class="header__wrapper">
-          <div class="header__logo">
+      <div class='container'>
+        <div class='header__wrapper'>
+          <div class='header__logo'>
             <picture>
-              <source srcset="./img/logo.webp, ./img/logo@2x.webp 2x">
-              <img src="./img/logo.png" alt="logo" width="150" />
+              <source srcset='./img/logo.webp, ./img/logo@2x.webp 2x'>
+              <img src='./img/logo.png' alt='logo' width='150' />
             </picture>
           </div>
-          <p class="header__center-text">
-            ОШИБОЧНЫЕ
-            (НЕПРАВИЛЬНЫЕ)
-            СУДЬИ
+          <p class='header__center-text'>
+            ОШИБОЧНЫЕ (НЕПРАВИЛЬНЫЕ) СУДЕБНЫЕ РЕШЕНИЯ
           </p>
-          <p class="header__right-text">
+          <p class='header__right-text'>
             Проект <br><b>«КАПЕЛЬКА»</b><br>
             Сергей Марюшин <br>
             Россия, Крым, Бахчисарай <br>
             с. Верхоречье
           </p>
         </div>
-        <div class="header__nav-wrapper">
-          <ul class="header__nav-list">
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">
-                О сайте
-              </a>
+        <div class='header__nav-wrapper'>
+          <ul class='header__nav-list'>
+            <li class='header__nav-item btn-nav' id='aboutPage'>
+              О сайте
             </li>
-            <li class="header__nav-item" title="Добавить свой ошибочный судебный акт">
-              <a href="#" class="header__nav-link">
-                Добавить ошибочный судебный акт
-              </a>
+            <li class='header__nav-item btn-nav' id='uploadForm' title='Добавить ошибочный судебный акт'>
+              Добавить ошибочный судебный акт
             </li>
-            <li class="header__nav-item"><a href="#" class="header__nav-link">
-                Контакты
-              </a></li>
-            <li class="header__nav-item" title="Реквизиты для поддержки проекта"><a href="#" class="header__nav-link">
-                Поддержать проект
-              </a></li>
+            <li class='header__nav-item btn-nav' id='contacts'>
+              Контакты
+            </li>
+            <li class='header__nav-item btn-nav' id='donateForm' title='Реквизиты для поддержки проекта'>
+              Поддержать проект
+            </li>
           </ul>
         </div>
       </div>
     </header>
     <main>
-      <section class="main">
-        <div class="container">
-          <div class="main__wrapper">
-            <div class="main__nav-wrapper">
-              <ul class="main__nav-list">
-                <!-- <li class="main__nav-item btn-nav" id="mistekes">Ошибочные судьи</li>
-                <li class="main__nav-item btn-nav" id="clerk">Неправильные чиновники</li>
-                <li class="main__nav-item btn-nav" id="profit">Отнятая выгода</li>
-                <li class="main__nav-item btn-nav" id="health">Неэффективная медицина</li>
-                <li class="main__nav-item btn-nav" id="half-house">Ампутированный дом</li>
-                <li class="main__nav-item btn-nav" id="reabilitation">(ч. 2 ст. 27 УПК РФ) Изъятая реабилитация</li> -->
+      <section class='main'>
+        <div class='container'>
+          <div class='main__wrapper'>
+            <div class='main__nav-wrapper'>
+              <ul class='main__nav-list'>
+
               </ul>
             </div>
-            <div class="main__content-wrapper">
+            <div class='main__content-wrapper'>
 
+              <!-- <div class="main__upload-form-wrapper">
+                <form action="">
+                  <div class="uploadForm">
+                    <h3>Добавьте решение, признанное судом высшей инстанции ошибочным.</h3>
+
+                    <p class="uploadFormP">1. Ваш Email для связи.<span class="uploadFormSpan"> На него будет отправлена
+                        ссылка для возможности резактировать Вашу публикацию.</span></p>
+                    <div class="text-field text-field_floating">
+                      <input class="text-field__input" name="email" type="email" id="email"
+                        title="Если Вы уверены, что все заполнили правильно и редактировать не придется - можно оставить поле пустым">
+                    </div>
+
+                    <p class="uploadFormP">2. Номер дела судебного решения, признанного судом высшей инстанции ошибочным
+                    </p>
+                    <div class="text-field text-field_floating">
+                      <input class="text-field__input" name="delo" type="text" id="delo"
+                        title="Укажите номер дела из текста судебного решения">
+                      <label class="text-field__label" for="delo">обязательное поле</label>
+                    </div>
+
+                    <p class="uploadFormP">3. Укажите ссылку данного решения на сайте суда (если решение обнародовано).
+                      <span class="uploadFormSpan">При отсутствии ссылки, на момент заполнения этой формы, публикация
+                        произойдет после ее появления в <a href="https://sudrf.ru/" target="_blank">«Государственной
+                          автоматизированной системе Российской Федерации
+                          «Правосудие»</a>
+                    </p></span>
+                    <details>
+                      <summary>Найти ссылку по номеру дела можно здесь:</summary>
+                      <ul>
+                        <li><a href="https://bahchisarai--krm.sudrf.ru/modules.php?name=sud_delo"
+                            target="_blank">Бахчисарайский районный суд</a>
+                        </li>
+                        <li><a href="https://vs--krm.sudrf.ru/modules.php?name=sud_delo" target="_blank">Верховный суд
+                            Республики Крым</a>
+                        </li>
+                      </ul>
+                    </details>
+                    <div class="text-field text-field_floating">
+                      <input class="text-field__input" name="link" type="text" id="link"
+                        title="Укажите ссылку на данное решение на сайте суда">
+                    </div>
+
+                    <p class="uploadFormP">4. Какая норма права признана нарушенной</p>
+                    <div class="text-field text-field_floating">
+                      <input class="text-field__input" name="postHeader" type="text" id="postHeader"
+                        title="Например: Вася Пупкин против прокуратуры Бахчисарайского р-на">
+                      <label class="text-field__label" for="postHeader">обязательное поле</label>
+                    </div>
+
+                    <p class="uploadFormP">5. Более подробное описание публикации. <span class="uploadFormSpan">
+                        Например: "суд нарушил право на непосредственное участие путем .....", "суд не назначил
+                        экспертизу, ссылаясь на ..... ", "суд неправильно допросил свидетеля способом наводящих вопросов
+                        ..... ", "суд не истребовал юридически значимые доказательства о предмете спора о праве .... " и
+                        т.д.</span>
+                    </p>
+                    <div class="text-field text-field_floating">
+                      <textarea class="text-field__input" name="postBody" type="text" id="postBody" title=""
+                        rows="10"></textarea>
+                      <label class="text-field__label" for="postBody"></label>
+                    </div>
+
+                    <p class="uploadFormP">6. Загрузить файлы:</p>
+                    <span class="uploadFormSpan">Добавить файл в формате PDF, JPG, JPEG до 5 Mb</span>
+                    <div class="text-field text-field_floating file">
+                      <input class="text-field__input" name="file" type="file" id="file"
+                        title="Добавьте файл и укажите краткое его описание" accept="image/png, image/jpeg, image/pdf">
+                    </div>
+                    <button class="btn addMoreFiles">Добавить еще файл</button>
+                    <hr>
+                    <p>Если у Вас возникли сложности или вопросы по заполнению данной формы, напишите нам:<a
+                        href="mailto:">example@gmail.com</a></p>
+                    <p>Ваш документ появится после проверки его действительности модератором.</p>
+                  </div>
+
+                </form>
+
+              </div> -->
             </div>
           </div>
       </section>
     </main>
     <footer>
-      <div class="container"></div>
+      <div class='container'></div>
     </footer>
   </div>
 
+  <template id="big-upload-form">
+    <div class="main__upload-form-wrapper">
+      <form action="">
+        <div class="uploadForm">
+          <h3>Добавьте решение, признанное судом высшей инстанции ошибочным.</h3>
+
+          <p class="uploadFormP">1. Ваш Email для связи.<span class="uploadFormSpan"> На него будет отправлена
+              ссылка для возможности резактировать Вашу публикацию.</span></p>
+          <div class="text-field text-field_floating">
+            <input class="text-field__input" name="email" type="email" id="email"
+              title="Если Вы уверены, что все заполнили правильно и редактировать не придется - можно оставить поле пустым">
+          </div>
+
+          <p class="uploadFormP">2. Номер дела судебного решения, признанного судом высшей инстанции ошибочным
+          </p>
+          <div class="text-field text-field_floating">
+            <input class="text-field__input" name="delo" type="text" id="delo"
+              title="Укажите номер дела из текста судебного решения">
+            <label class="text-field__label" for="delo">обязательное поле</label>
+          </div>
+
+          <p class="uploadFormP">3. Укажите ссылку данного решения на сайте суда (если решение обнародовано).
+            <span class="uploadFormSpan">При отсутствии ссылки, на момент заполнения этой формы, публикация
+              произойдет после ее появления в <a href="https://sudrf.ru/" target="_blank">«Государственной
+                автоматизированной системе Российской Федерации
+                «Правосудие»</a>
+          </p></span>
+          <details>
+            <summary>Найти ссылку по номеру дела можно здесь:</summary>
+            <ul>
+              <li><a href="https://bahchisarai--krm.sudrf.ru/modules.php?name=sud_delo" target="_blank">Бахчисарайский
+                  районный суд</a>
+              </li>
+              <li><a href="https://vs--krm.sudrf.ru/modules.php?name=sud_delo" target="_blank">Верховный суд
+                  Республики Крым</a>
+              </li>
+            </ul>
+          </details>
+          <div class="text-field text-field_floating">
+            <input class="text-field__input" name="link" type="text" id="link"
+              title="Укажите ссылку на данное решение на сайте суда">
+          </div>
+
+          <p class="uploadFormP">4. Какая норма права признана нарушенной</p>
+          <div class="text-field text-field_floating">
+            <input class="text-field__input" name="postHeader" type="text" id="postHeader"
+              title="Например: Вася Пупкин против прокуратуры Бахчисарайского р-на">
+            <label class="text-field__label" for="postHeader">обязательное поле</label>
+          </div>
+
+          <p class="uploadFormP">5. Более подробное описание публикации. <span class="uploadFormSpan">
+              Например: "суд нарушил право на непосредственное участие путем .....", "суд не назначил
+              экспертизу, ссылаясь на ..... ", "суд неправильно допросил свидетеля способом наводящих вопросов
+              ..... ", "суд не истребовал юридически значимые доказательства о предмете спора о праве .... " и
+              т.д.</span>
+          </p>
+          <div class="text-field text-field_floating">
+            <textarea class="text-field__input" name="postBody" type="text" id="postBody" title="" rows="10"></textarea>
+            <label class="text-field__label" for="postBody"></label>
+          </div>
+
+          <p class="uploadFormP">6. Загрузить файлы:</p>
+          <span class="uploadFormSpan">Добавить файл в формате PDF, JPG, JPEG до 5 Mb</span>
+          <div class="text-field text-field_floating file">
+            <input class="text-field__input" name="file" type="file" id="file"
+              title="Добавьте файл и укажите краткое его описание" accept="image/png, image/jpeg, image/pdf">
+          </div>
+          <button class="btn addMoreFiles">Добавить еще файл</button>
+          <hr>
+          <p>Если у Вас возникли сложности или вопросы по заполнению данной формы, напишите нам:<a
+              href="mailto:">example@gmail.com</a></p>
+          <p>Ваш документ появится после проверки его действительности модератором.</p>
+        </div>
+
+      </form>
+
+    </div>
+  </template>
+
+  <template id="small-upload-form">
+
+  </template>
+
+  <template id="main-fio-list">
+    <div class="fio__wrapper">
+      <div class="fio__header">
+        <div class="fio__header-names">ФИО судей, вынесших ошибочное решение </div>
+        <div class="fio__header-court-name">Наименование суда, регион</div>
+        <div class="fio__header-count">Количество не честных судебных решений</div>
+      </div>
+    </div>
+  </template>
+
+  <template id="fio__list-item-wrapper">
+    <div class="fio__list-item">
+      <div class="fio__list-left-col"><a class="fio__list-left-col-link" href="">xxx</a></div>
+      <div class="fio__list-center-col">xxx</div>
+      <div class="fio__list-right-col">xxx</div>
+    </div>
+  </template>
   <!-- Модалки
-  <div class="modal modal--preload" data-modal="feedback">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Обычная модалка</p>
-        <button class="modal__close-btn-nav btn-nav-reset" type="button" aria-label="Закрыть окно" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
+  <div class='modal modal--preload' data-modal='feedback'>
+    <div class='modal__wrapper'>
+      <div class='modal__overlay' data-close-modal></div>
+      <div class='modal__content'>
+        <p class='modal__description'>Обычная модалка</p>
+        <button class='modal__close-btn-nav btn-nav-reset' type='button' aria-label='Закрыть окно' data-close-modal>
+          <svg width='15' height='15'>
+            <use xlink:href='img/sprite.svg#icon-close'></use>
           </svg>
         </button>
       </div>
     </div>
   </div>
 
-  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-        <button class="modal__close-btn-nav btn-nav-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
+  <div class='modal modal--preload modal--fit-content modal--no-scale' data-modal='success'>
+    <div class='modal__wrapper'>
+      <div class='modal__overlay' data-close-modal></div>
+      <div class='modal__content'>
+        <p class='modal__description'>Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+        <button class='modal__close-btn-nav btn-nav-reset' type='button' aria-label='Закрыть попап' data-close-modal>
+          <svg width='15' height='15'>
+            <use xlink:href='img/sprite.svg#icon-close'></use>
           </svg>
         </button>
       </div>
     </div>
   </div> -->
 
-  <script src="js/vendor.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <!-- <script src='js/vendor.min.js'></script> -->
+  <script src='js/main.min.js'></script>
 </body>
 
 </html>
