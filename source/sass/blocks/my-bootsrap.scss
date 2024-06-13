@@ -1,0 +1,53 @@
+.mt-15 {
+  margin-top: 15px;
+}
+
+.fwb {
+  font-weight: bold;
+}
+
+.w-150 {
+  width: 150px;
+}
+
+.h-100 {
+  height: 100px;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.jcs {
+  justify-content: start;
+}
+
+.tblack {
+  color: $color-default-black;
+}
+
+dot1 {
+  display: inline;
+  border-bottom: 1px dashed $color-default-black;
+  text-decoration: none;
+}
+
+dot2 {
+  display: inline;
+  border-bottom: 4px double $color-default-black;
+  text-decoration: none;
+}
+
+box {
+  display: inline;
+  border: 1px solid $color-default-black;
+}
+
+box2 {
+  display: inline;
+  border: 1px dashed $color-default-black;
+}
+
+mark, span {
+  display: inline;
+}

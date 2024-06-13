@@ -1,0 +1,65 @@
+.content-title {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.content-table-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  border-right: 1px solid $color-transparent;
+  border-left: 1px solid $color-transparent;
+  border-bottom: 1px solid $color-tropical-rain-forest;
+}
+
+.left-col {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  padding: 0 15px;
+  border-right: 1px solid $color-tropical-rain-forest;
+  min-height: 54px;
+  color: $color-neon-blue;
+}
+
+.center-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 15px 15px;
+  min-height: 54px;
+}
+
+.right-col {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  padding: 0 15px;
+  justify-content: center;
+  border-left: 1px solid $color-tropical-rain-forest;
+  min-height: 54px;
+
+}
+
+.three-cols-table-wrapper, .two-cols-table-wrapper {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  border-bottom: 1px solid $color-tropical-rain-forest;
+  border-right: 1px solid $color-transparent;
+  border-left: 1px solid $color-transparent;
+  overflow: hidden;
+}
+
+.three-cols-table-wrapper:hover, .two-cols-table-wrapper:hover{
+  background-color: $color-btn-nav-hover;
+  border-left: 1px solid $color-tropical-rain-forest;
+  border-right: 1px solid $color-tropical-rain-forest;
+
+}

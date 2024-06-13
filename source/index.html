@@ -21,12 +21,15 @@
               <img src='./img/logo.png' alt='logo' width='150' />
             </picture>
           </div>
-          <p class='header__center-text'>
-            ОШИБОЧНЫЕ (НЕПРАВИЛЬНЫЕ) СУДЕБНЫЕ РЕШЕНИЯ
-          </p>
+          <div class='header__center-text'>
+            Судебные ошибки – на службу судебной реформе <br>
+            <span>в помощь «президентскому фильтру» для увольнения судей по не соответствию
+              (тексты указов Президента РФ <a href="http://www.kremlin.ru/acts/bank/46430">здесь</a> и <a
+                href="http://www.kremlin.ru/acts/bank/46433">здесь</a>)</span>
+          </div>
           <p class='header__right-text'>
             Проект <br><b>«КАПЕЛЬКА»</b><br>
-            Сергей Марюшин <br>
+            Сергей Марюшин <br>30 лет судебной практики в судах 5-ти политических систем<br>
             Россия, Крым, Бахчисарай <br>
             с. Верхоречье
           </p>
@@ -60,83 +63,50 @@
             </div>
             <div class='main__content-wrapper'>
 
-              <!-- <div class="main__upload-form-wrapper">
-                <form action="">
-                  <div class="uploadForm">
-                    <h3>Добавьте решение, признанное судом высшей инстанции ошибочным.</h3>
+              <!-- <div class="content-title">Загрузить свой ошибочный судебный акт</div>
 
-                    <p class="uploadFormP">1. Ваш Email для связи.<span class="uploadFormSpan"> На него будет отправлена
-                        ссылка для возможности резактировать Вашу публикацию.</span></p>
-                    <div class="text-field text-field_floating">
-                      <input class="text-field__input" name="email" type="email" id="email"
-                        title="Если Вы уверены, что все заполнили правильно и редактировать не придется - можно оставить поле пустым">
-                    </div>
+              <form class="small-upload-wrapper">
+                <label for="sudName">Судья:</label><br>
+                <select class="sm-input" name="sudName" id="sudName">
+                  <option class="optFio" value="morozko">О.Морозко</option>
+                  <option class="optFio" value="koshelev">В.Кошелев</option>
+                  <option class="optFio" value="korbut">А.Корбут</option>
+                  <option class="optFio" value="skisov">А.Скисов</option>
+                </select><br>
 
-                    <p class="uploadFormP">2. Номер дела судебного решения, признанного судом высшей инстанции ошибочным
-                    </p>
-                    <div class="text-field text-field_floating">
-                      <input class="text-field__input" name="delo" type="text" id="delo"
-                        title="Укажите номер дела из текста судебного решения">
-                      <label class="text-field__label" for="delo">обязательное поле</label>
-                    </div>
+                <label for="deloNumber">№ дела:</label><br>
+                <input class="sm-input" name="deloNumber" value"" id="deloNumber"></input><br>
 
-                    <p class="uploadFormP">3. Укажите ссылку данного решения на сайте суда (если решение обнародовано).
-                      <span class="uploadFormSpan">При отсутствии ссылки, на момент заполнения этой формы, публикация
-                        произойдет после ее появления в <a href="https://sudrf.ru/" target="_blank">«Государственной
-                          автоматизированной системе Российской Федерации
-                          «Правосудие»</a>
-                    </p></span>
-                    <details>
-                      <summary>Найти ссылку по номеру дела можно здесь:</summary>
-                      <ul>
-                        <li><a href="https://bahchisarai--krm.sudrf.ru/modules.php?name=sud_delo"
-                            target="_blank">Бахчисарайский районный суд</a>
-                        </li>
-                        <li><a href="https://vs--krm.sudrf.ru/modules.php?name=sud_delo" target="_blank">Верховный суд
-                            Республики Крым</a>
-                        </li>
-                      </ul>
-                    </details>
-                    <div class="text-field text-field_floating">
-                      <input class="text-field__input" name="link" type="text" id="link"
-                        title="Укажите ссылку на данное решение на сайте суда">
-                    </div>
+                <label for="title">Суть судебной ошибки:</label><br>
+                <textarea  class="sm-input h-100" value"" name="title" value"" id="title" rows="3"></textarea><br>
 
-                    <p class="uploadFormP">4. Какая норма права признана нарушенной</p>
-                    <div class="text-field text-field_floating">
-                      <input class="text-field__input" name="postHeader" type="text" id="postHeader"
-                        title="Например: Вася Пупкин против прокуратуры Бахчисарайского р-на">
-                      <label class="text-field__label" for="postHeader">обязательное поле</label>
-                    </div>
+                <label for="law">Что нарушено:</label><br>
+                <input class="sm-input" value"" name="law" id="law"></input><br>
 
-                    <p class="uploadFormP">5. Более подробное описание публикации. <span class="uploadFormSpan">
-                        Например: "суд нарушил право на непосредственное участие путем .....", "суд не назначил
-                        экспертизу, ссылаясь на ..... ", "суд неправильно допросил свидетеля способом наводящих вопросов
-                        ..... ", "суд не истребовал юридически значимые доказательства о предмете спора о праве .... " и
-                        т.д.</span>
-                    </p>
-                    <div class="text-field text-field_floating">
-                      <textarea class="text-field__input" name="postBody" type="text" id="postBody" title=""
-                        rows="10"></textarea>
-                      <label class="text-field__label" for="postBody"></label>
-                    </div>
+                <label class="header__nav-item btn-nav save-btn" for="filePath">Прикрепить файл</label><br>
+                <input class="sm-input" name="filePath" id="filePath" type="file" acept="image/*,.pdf">(предварительно файл уже должен быть в соответствующей
+                папке)</input><br>
+                <hr>
 
-                    <p class="uploadFormP">6. Загрузить файлы:</p>
-                    <span class="uploadFormSpan">Добавить файл в формате PDF, JPG, JPEG до 5 Mb</span>
-                    <div class="text-field text-field_floating file">
-                      <input class="text-field__input" name="file" type="file" id="file"
-                        title="Добавьте файл и укажите краткое его описание" accept="image/png, image/jpeg, image/pdf">
-                    </div>
-                    <button class="btn addMoreFiles">Добавить еще файл</button>
-                    <hr>
-                    <p>Если у Вас возникли сложности или вопросы по заполнению данной формы, напишите нам:<a
-                        href="mailto:">example@gmail.com</a></p>
-                    <p>Ваш документ появится после проверки его действительности модератором.</p>
-                  </div>
-
-                </form>
-
+                <button type="submit" class="header__nav-item btn-nav save-btn mt-15">Сохранить</button>
+              </form>
+              <div class="content-title">Предпросмотр записи</div>
+              <div class="personal-list-header-wrapper">
+                <div class="personal-list counter fwb">№</div>
+                <div class="personal-list file fwb">Суд.акт</div>
+                <div class="personal-list delo fwb">№ дела</div>
+                <div class="personal-list title fwb">Суть судебной ошибки</div>
+                <div class="personal-list law fwb">Что нарушено</div>
+              </div>
+              <div class="personal-list-wrapper">
+                <div class="personal-list counter"></div>
+                <div class="personal-list file"><a class="link" href="" target="_blank" title="Открыть PDF"><img
+                      src="./img/file.png" /></a></div>
+                <div class="personal-list delo"></div>
+                <div class="personal-list title"></div>
+                <div class="personal-list law"></div>
               </div> -->
+
             </div>
           </div>
       </section>
@@ -226,56 +196,91 @@
   </template>
 
   <template id="small-upload-form">
+    <div class="content-title">Загрузить свой ошибочный судебный акт</div>
+    <form class="small-upload-form" id="small-upload-form">
+      <label class="header__nav-item btn-nav save-btn" for="filePath">Прикрепить файл</label><br>
+      <input class="" name="filePath" id="filePath" type="file" acept="image/*,.pdf">(предварительно файл уже
+      должен быть в соответствующей
+      папке)</input><br>
 
+      <label for="sudFio">Судья принявший ошибочное решение:</label><br>
+      <select class="sm-input" name="sudFio" id="sudFio">
+        <option class="optFio" value=""></option>
+      </select><br>
+      <label for="deloNumber">№ дела:</label><br>
+      <input class="sm-input" name="deloNumber" value"" id="deloNumber"></input><br>
+      <label for="title">Суть судебной ошибки:</label><br>
+      <textarea class="sm-input h-100" value"" name="title" value"" id="title" rows="3"></textarea><br>
+      <label for="law">Что нарушено:</label><br>
+      <input class="sm-input" value"" name="law" id="law"></input><br>
+      <hr>
+      <button type="button" class="header__nav-item btn-nav save-btn mt-15">Проверить</button>
+      <button type="submit" class="header__nav-item btn-nav save-btn mt-15">Сохранить</button>
+    </form><br><br>
   </template>
 
   <template id="main-fio-list">
-    <div class="fio__wrapper">
-      <div class="fio__header">
-        <div class="fio__header-names">ФИО судей, вынесших ошибочное решение </div>
-        <div class="fio__header-court-name">Наименование суда, регион</div>
-        <div class="fio__header-count">Количество не честных судебных решений</div>
-      </div>
+    <div class="content-title">СПИСОК судей, принявших ошибочные решения</div>
+    <div class="content-table-header">
+      <div class="left-col tblack">ФИО судей, вынесших ошибочное решение</div>
+      <div class="center-col">Наименование суда, регион</div>
+      <div class="right-col">Количество не честных судебных решений</div>
     </div>
   </template>
 
-  <template id="fio__list-item-wrapper">
-    <div class="fio__list-item">
-      <div class="fio__list-left-col"><a class="fio__list-left-col-link" href="">xxx</a></div>
-      <div class="fio__list-center-col">xxx</div>
-      <div class="fio__list-right-col">xxx</div>
+  <template id="two-cols-table">
+    <div class="two-cols-table-wrapper">
+      <div class="two-cols-table left-col">
+        <a class="two-cols-table-link" href="" title="Смотреть файл" target="_blank"></a>
+      </div>
+      <div class="two-cols-table-text center-col"></div>
     </div>
   </template>
-  <!-- Модалки
-  <div class='modal modal--preload' data-modal='feedback'>
-    <div class='modal__wrapper'>
-      <div class='modal__overlay' data-close-modal></div>
-      <div class='modal__content'>
-        <p class='modal__description'>Обычная модалка</p>
-        <button class='modal__close-btn-nav btn-nav-reset' type='button' aria-label='Закрыть окно' data-close-modal>
-          <svg width='15' height='15'>
-            <use xlink:href='img/sprite.svg#icon-close'></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
 
-  <div class='modal modal--preload modal--fit-content modal--no-scale' data-modal='success'>
-    <div class='modal__wrapper'>
-      <div class='modal__overlay' data-close-modal></div>
-      <div class='modal__content'>
-        <p class='modal__description'>Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-        <button class='modal__close-btn-nav btn-nav-reset' type='button' aria-label='Закрыть попап' data-close-modal>
-          <svg width='15' height='15'>
-            <use xlink:href='img/sprite.svg#icon-close'></use>
-          </svg>
-        </button>
-      </div>
+  <template id="three-cols-table">
+    <div class="three-cols-table-wrapper">
+      <div class="left-col"></div>
+      <div class="center-col"></div>
+      <div class="right-col"></div>
     </div>
-  </div> -->
+  </template>
 
-  <!-- <script src='js/vendor.min.js'></script> -->
+  <template id="content-text">
+    <div class="content-title"></div>
+    <div class="content-body"></div>
+    <div class="content-docs-title mt-15 fwb">Документы по делу:</div>
+  </template>
+
+  <template id="personal-list-header">
+    <div class="content-title"></div>
+    <div class="personal-list-header-wrapper">
+      <div class="personal-list counter fwb">№</div>
+      <div class="personal-list file fwb">Суд.акт</div>
+      <div class="personal-list delo fwb">№ дела</div>
+      <div class="personal-list title fwb">Суть судебной ошибки</div>
+      <div class="personal-list law fwb">Что нарушено</div>
+    </div>
+  </template>
+
+  <template id="personal-list">
+    <div class="personal-list-wrapper">
+      <div class="personal-list counter"></div>
+      <div class="personal-list file"><a class="link" href="" target="_blank" title="Открыть судебный акт"><img
+            src="./img/file.png" /></a></div>
+      <div class="personal-list delo"></div>
+      <div class="personal-list title"></div>
+      <div class="personal-list law"></div>
+    </div>
+  </template>
+
+  <template id="footnote">
+    <hr>
+    <div class="footnote-wrapper">
+      <div><sup class="footnote-number"></sup></div>
+      <div class="footnote-text"></div>
+    </div>
+  </template>
+
   <script src='js/main.min.js'></script>
 </body>
 

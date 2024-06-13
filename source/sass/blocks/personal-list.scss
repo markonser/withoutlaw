@@ -1,0 +1,61 @@
+.personal-list-wrapper, .personal-list-header-wrapper {
+  display: grid;
+  grid-template-columns: 50px 60px 150px 1fr 250px;
+  justify-content: space-between;
+  border-bottom: 1px solid $color-tropical-rain-forest;
+}
+.personal-list-header-wrapper {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255,255,255,.9);
+}
+
+.personal-list-wrapper:hover {
+  background-color: $color-btn-nav-hover;
+}
+
+.header {
+  text-align: center;
+}
+
+.file img {
+  width: 30px;
+}
+
+.file {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-width: max-content;
+}
+
+.delo {
+  // display: grid;
+  align-items: center;
+  word-wrap: break-word;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.title {
+  text-align: justify;
+  padding-right: 20px;
+  // display: grid;
+  align-items: center;
+  overflow: hidden;
+}
+
+.law {
+  // display: grid;
+  align-items: center;
+  word-wrap: break-word;
+  overflow: hidden;
+}
